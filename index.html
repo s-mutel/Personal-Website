@@ -10,16 +10,18 @@
 <body>
 
     <header>
-        <nav>
-            <h6>Sacha Mutel</h6>
-            <ul>
-                <a href="#home" class="nav1"><li>Home</li></a>
-                <a href="#about" class="nav2"><li>About</li></a>
-                <a href="#projects" class="nav3"><li>Projects</li></a>
-                <a href="#travels" class="nav4"><li>Travels</li></a>
-                <a href="./contact.html" class="nav5"><li>Contact</li></a>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <h6 class="nav-title">Sacha Mutel</h6>
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li></li><a href="#about" class="nav-link">About</a></li>
+                    <li></li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li></li><a href="#travels" class="nav-link">Travels</a></li>
+                    <li></li><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
@@ -52,21 +54,39 @@
                 <h2>Projects</h2>
                 <div class ="professionals">
                     <h3>Professionals Projects</h3>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <details>
+                        <summary class="project-title">
+                            <h4>Mixed Message</h4>
+                        </summary>
+                        <p>This app show some joke in adequation with your age.</p>
+                    </details>           
+                    
+                    
                 </div>
                 <div class="sports">
                     <h3>Sports Projects</h3>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <details>
+                        <summary class="project-title">
+                            <h4>The Japanese Odyssey - 2019</h4>
+                        </summary>
+                        <p>A 2400km unsupported race from Kagoshima to Tokyo. <a href="#">Read the adventure here</a></p>
+                    </details>
+                    <details>
+                        <summary class="project-title">
+                            <h4>The Hope 1000 - 2021</h4>
+                        </summary>
+                        <p>This off-road event will take place in Switzerland in june 2021. The story will come after.</p>
+                    </details>
+                    <details>
+                        <summary class="project-title">
+                            <h4>The Transpyrénées - 2021</h4>
+                        </summary>
+                        <p>The Transpyrénées got postponed because of the Covid. The story will be available late october 2021.</p>
+                    </details>
                 </div>
             </div>
+
+
             <div class="skill">
                 <h2>Skills</h2>
                 <div class="skills-container">
@@ -97,5 +117,13 @@
     <footer>
         <p>Sacha Mutel &copy</p>
     </footer>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })    
+    </script>
 </body>
 </html>
