@@ -145,7 +145,7 @@ a.active:hover{
 
 /*responsive navbar*/
 
-@media only screen and (max-width: 965px){
+@media only screen and (max-width: 975px){
     label.logo{
         font-size: 30px;
         padding-left:50px;
@@ -158,9 +158,13 @@ a.active:hover{
 
 }
 
-@media only screen and (max-width: 860px){
+@media only screen and (max-width: 875px){
     .checkbtn{
         display: block;
+    }
+
+    nav{
+        background-color: #fff;
     }
 
     ul{
@@ -361,7 +365,7 @@ summary {
     position: relative;
     top: 100px;
     left: 10%;
-    max-width: 200px;
+    max-width: 300px;
     padding: 0 5rem 2rem 5rem;
     border: groove 1px gray;
     border-radius: 4px;
