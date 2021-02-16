@@ -1,7 +1,7 @@
 # Sacha Mutel
 
 ## Introduction
-This website is about me, the project (professionals and sportif) I've got and the travels I've already done.
+This website is about me, the projects (professionals and sportif) I've got and the travels I've already done.
 
 ## Languages
 

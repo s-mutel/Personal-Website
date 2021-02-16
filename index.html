@@ -48,7 +48,7 @@
                 </p>
             </div>
             <div class="secondaire">
-
+                <div id="clock_container"></div>
             </div>
         </div>
 
@@ -73,6 +73,12 @@
                             <h4>The Japanese Odyssey - 2019</h4>
                         </summary>
                         <p>A 2400km unsupported race from Kagoshima to Tokyo. <a href="#">Read the adventure here</a></p>
+                    </details>
+                    <details>
+                        <summary class="project-title">
+                            <h4>Race Around Rwanda - 2021</h4>
+                        </summary>
+                        <p>A 1000km unsupported race in the land of 1000 hills. <a href="rwanda.html">Read the adventure here</a></p>
                     </details>
                     <details>
                         <summary class="project-title">
@@ -128,5 +134,13 @@
             header.classList.toggle('scrolling-active', windowPosition);
         })    
     </script>
+
+    <!-- Charge React-->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    
+
+    <!-- Charge notre composant React-->
+    <script src="clock.js"></script>
 </body>
 </html>
